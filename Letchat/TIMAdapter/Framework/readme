@@ -1,0 +1,25 @@
+本目录下包含IMSDK与TLS相关的SDK,其中
+//=====================================================================
+IMSDK相关的依赖库
+ImSDK.framework : required (必须导入,下同)
+IMCore.framework : required
+QALSDK.framework : required
+TLSSDK.framework : required
+
+Analytics.framework : optional (可不导入,下同, 原灯塔SDK, 1.9 已去掉)
+IMSDKBugly.framework : optional 
+
+//=====================================================================
+TLS相关
+目前只在IMALoginViewController里面用到，用户可根据自己的需要，决定是否载入下面的SDK，如果依然使用IMALoginViewController，下列optional都是required
+
+
+TLSSDK.framework : required
+TencentOpenAPI.framework : optional
+TencentOpenApi_IOS_Bundle.bundle : optional
+TLSUI.bundle : optional
+TLSUI.framework : optional
+TLSUIBundle.bundle : optional
+WXApi : optional
+
+//=====================================================================
